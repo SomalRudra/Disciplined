@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--        </RelativeLayout>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+
+    <EditText
+        android:id="@+id/subject_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Subject"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_editext"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/class_link_detail"
+        />
+
+    <EditText
+        android:id="@+id/class_link_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_editext"
+        android:hint="Enter Class Link"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:id="@id/time_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/class_link_detail"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/time_entry_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_enter_instruction"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+        <LinearLayout
+            android:id="@+id/time_detail_ll"
+            android:layout_below="@id/class_link_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/time_detail_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:background="@drawable/custom_editext"
+                android:layout_below="@id/time_entry_instruction"
+                android:hint="@string/hour"
+                />
+
+            <EditText
+                android:id="@+id/time_detail_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:background="@drawable/custom_editext"
+                android:layout_below="@id/class_link_detail"
+                android:layout_toRightOf="@id/time_detail_hour"
+                android:hint="@string/minute"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submission_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:fontFamily="@font/actor"
+        android:textColor="@color/White"
+        android:background="@drawable/card_manualfill_deco"
+        />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recycler_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+            <Button
+                android:id="@+id/manual_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_manualfill_deco"
+                android:padding="50dp"
+                android:text="@string/fill_manually"
+                android:textColor="@color/black"
+                android:fontFamily="@font/actor"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/image_to_text_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_imagetotext_deco"
+                android:padding="50dp"
+                android:text="@string/fill_from_image"
+                android:textColor="@color/black"
+                android:fontFamily="@font/actor"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

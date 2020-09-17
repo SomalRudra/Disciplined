@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Discipline</string>
+    <string name="fill_manually">Fill Schedule Manually</string>
+    <string name="fill_from_image">Fill By Image to Text</string>
+    <string name="add">Add</string>
+    <string name='hour'>hh</string>
+    <string name='minute'>mm</string>
+    <string name="Enter_time">Time</string>
+    <string name="time_enter_instruction">Enter time in 24 hrs format </string>
+    <string name="schedule_cant_be_saved">Empty schedule is not saved</string>
+</resources>
